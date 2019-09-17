@@ -14,10 +14,16 @@
 
 
 ***
-![Image of Git commit & push](Capture1.PNG)
+![Git commit & push](Capture1.PNG)
 
 ***
-![Image of Git create new branch](Capture2.PNG)
+![Git create new feature branch](Capture2.PNG)
 
 ***
-![Image of Git push new branch to remote](Capture3.PNG)
+![Git push new branch to remote](Capture3.PNG)
+
+***
+![Git merge to master](Capture4.PNG)
+
+***
+![Git delete new feature](Capture5.PNG)
