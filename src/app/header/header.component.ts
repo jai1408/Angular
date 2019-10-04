@@ -7,9 +7,9 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 
 export class HeaderComponent {
-    @Output() numberSelected = new EventEmitter<number>();
-    onSelected(num: number){
+    //@Output() numberSelected = new EventEmitter<number>();
+    /*onSelected(num: number){
         this.numberSelected.emit(num);
-    }
+    }*/
 
 }
