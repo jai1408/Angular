@@ -18,9 +18,12 @@ export class ShoppingListService {
   }
 
   addIngredientToShoppingList(ingredients: Ingredient[]) {
-    // for (let ingredient of ingredients) {
-    //   this.addIngredient(ingredient);
-    // }
+    /**
+    * ! no longer needed as this only adds ingredients to new ingredient array not existing one.
+     for (let ingredient of ingredients) {
+       this.addIngredient(ingredient);
+     }
+    */
     this.ingredients.push(...ingredients);
     this.ingredientsChanged.emit(this.ingredients.slice());
   }

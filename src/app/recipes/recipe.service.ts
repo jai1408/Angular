@@ -23,6 +23,22 @@ export class RecipeService {
             [
                 new Ingredient('Buns', 2),
                 new Ingredient('Meat', 1)
+            ]),
+
+        new Recipe('Taco Crescent Ring',
+            ' Its easy, beefy, cheesy and comes loaded with all the best taco toppings',
+            'https://images-gmi-pmc.edge-generalmills.com/23bcd559-1e27-4c54-90a7-812690764c7f.jpg',
+            [
+                new Ingredient('ground beef', 1),
+                new Ingredient('Old El Paso™ taco seasoning mix', 1)
+            ]),
+
+        new Recipe('Creamy Italian Chicken Pasta Recipe',
+            ' Packed with flavor from spinach, garlic, and sun dried tomatoes, your family will gobble this easy dinner right up!',
+            'https://www.shugarysweets.com/wp-content/uploads/2011/04/IMG_3873.jpg',
+            [
+                new Ingredient('Pasta', 100),
+                new Ingredient('chicken', 200)
             ])
     ];
 
@@ -30,6 +46,10 @@ export class RecipeService {
 
     getRecipes() {
         return this.recipes.slice();
+    }
+
+    getRecipe(index: number) {
+        return this.recipes[index];
     }
 
     addIngredientsToShoppingList(ingredients: Ingredient[]) {
